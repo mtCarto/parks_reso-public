@@ -6,7 +6,7 @@ locals {
 }
 
 generate "remote_state" {
-  path      = "backend.tf"
+  path      = "backend-public.tf"
   if_exists = "overwrite"
   contents  = <<EOF
 terraform {
